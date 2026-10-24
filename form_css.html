@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color:#f2f2f2;
+        }
+
+        .container{
+            width:600px;
+            margin:30px auto;
+            background:white;
+            padding:20px;
+            border-radius:8px;
+            box-shadow:0 0 10px gray;
+        }
+
+        h2{
+            text-align:center;
+            color:darkblue;
+        }
+
+        table{
+            width:100%;
+        }
+
+        td{
+            padding:8px;
+        }
+
+        input, select, textarea{
+            width:100%;
+            padding:8px;
+            border:1px solid gray;
+            border-radius:4px;
+        }
+
+        input[type=radio],
+        input[type=checkbox]{
+            width:auto;
+        }
+
+        input[type=submit],
+        input[type=reset]{
+            width:120px;
+            background:darkblue;
+            color:white;
+            border:none;
+            cursor:pointer;
+            padding:10px;
+        }
+
+        input[type=submit]:hover,
+        input[type=reset]:hover{
+            background:green;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post">
+
+<table>
+
+<tr>
+<td>Full Name</td>
+<td><input type="text" placeholder="Enter Full Name" required></td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td><input type="email" placeholder="Enter Email" required></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="password" required></td>
+</tr>
+
+<tr>
+<td>Mobile Number</td>
+<td><input type="tel" pattern="[0-9]{10}" placeholder="9876543210"></td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td><input type="number" min="18" max="30"></td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td><input type="date"></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</td>
+</tr>
+
+<tr>
+<td>Department</td>
+<td>
+<select>
+<option>Select Department</option>
+<option>BCA</option>
+<option>B.Sc IT</option>
+<option>BBA</option>
+<option>B.Com</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Skills</td>
+<td>
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
+<input type="checkbox"> Python
+</td>
+</tr>
+
+<tr>
+<td>Favorite Color</td>
+<td><input type="color"></td>
+</tr>
+
+<tr>
+<td>Programming Skill</td>
+<td><input type="range" min="0" max="100"></td>
+</tr>
+
+<tr>
+<td>Upload Photo</td>
+<td><input type="file"></td>
+</tr>
+
+<tr>
+<td>Website</td>
+<td><input type="url" placeholder="https://example.com"></td>
+</tr>
+
+<tr>
+<td>City</td>
+<td>
+<input list="cities">
+
+<datalist id="cities">
+<option>Ahmedabad</option>
+<option>Rajkot</option>
+<option>Surat</option>
+<option>Vadodara</option>
+</datalist>
+
+</td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td>
+<textarea rows="4" placeholder="Enter Address"></textarea>
+</td>
+</tr>
+
+<tr>
+<td align="center" colspan="2">
+
+<input type="submit" value="Register">
+
+<input type="reset" value="Clear">
+
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+</body>
+</html>

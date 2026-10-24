@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Assignment_&_Note_Sharing_Platform.html</title>
+    <style>
+    #Header{width:100%;height:auto ;display:flex;align-items:center;justify-content: space-between;background-color:#1d2f4e;
+            border-radius:20px 20px 20px 20px;box-shadow:0px 0px 17px 7px #2a3756}
+		.profile{display:flex;margin-top:15px;margin-left:10px}	
+        .profile-img{border:1px solid black;width:50px;height:50px;border-radius:50%;;margin-left:10px;box-shadow:0px 0px 10px 5px rgb(153, 212, 232);}
+        .Platform{text-decoration:none;color:white;font-size:19px}
+		nav{padding:20px;}
+		.detail{padding:7px;border:1px solid black;border-radius: 5px 5px 5px 5px;background-color: white;box-shadow:0px 0px 5px 1.5px gray}
+
+    #content{background:linear-gradient(to right,rgb(93, 67, 195),rgb(71, 46, 194),rgb(95, 72, 190));margin:40px;border-radius:20px 20px 20px 20px;
+             box-shadow:0px 0px 17px 7px rgb(80, 80, 195);width: 45%;padding:20px;color: white;}
+
+    #footer{background-color:#1d2c4e;padding:10px;color:white;margin-top:20px;border-radius:20px 20px 20px 20px;box-shadow:0px 0px 17px 7px #2a3756}
+
+    .detail:hover{font-size: large;background-color: rgb(196, 199, 255);}
+
+        table{ width:100%;}
+
+        td{ padding:8px;}
+
+        input, select, textarea{ width:95%;padding:8px;border:1px solid black;border-radius:4px;}
+        
+        input[type=radio]{width:auto;}
+
+        input[type=submit],
+        input[type=reset]{width:120px;background:darkblue;color:white;border:none;cursor:pointer;padding:10px; }
+
+        input[type=submit]:hover,
+        input[type=reset]:hover{ background:green;}
+    
+    </style>
+</head>
+<body>
+                                          <!-- header -->
+   <div id="Header">
+        <div class="profile">
+            <img class="profile-img" src="logo of Platform.jpeg">&nbsp &nbsp
+			<div class="profile">
+                <nav>
+                    <a class="Platform"  href="Assignment & Note Sharing Platform-ɽ▻ Login.html">📝Assignment & Note Sharing Platform</a>
+                </nav>
+			</div>  
+        </div>  
+        <div style="margin-top:22px">       
+                <nav>
+					<a class="detail" class="hover" href="Assignment & Note Sharing Platform-Contact.html">Contact us</a>
+				</nav>
+		</div>
+    </div>
+                                              <!-- main -->
+    <div id="main">
+        <center>
+        <div id="content">
+            <h2> Registration for Assignment & Notes </h2>
+
+            <form action="Assignment & Note Sharing Platform-Home Page.html" method="post">
+                <table border="1px ">
+                    <tr>
+                    <td>Full Name</td>
+                    <td><input type="text" placeholder="Enter Full Name" required></td>
+                    </tr>
+
+                    <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="Enter Email" required></td>
+                    </tr>
+
+                    <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="number" pattern="[0-9]{10}" placeholder="9876543210" required></td>
+                    </tr>
+
+                    <tr>
+                    <td>Age</td>
+                    <td><input type="number" min="1" max="30"></td>
+                    </tr>
+
+                    <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date"></td>
+                    </tr>
+
+                    <tr>
+                    <td>Gender</td>
+                    <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                    <input type="radio" name="gender"> Other
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td>Department</td>
+                    <td>
+                    <select>
+                        <option>Select Department</option>
+                        <option>BCA</option>
+                        <option>B.Sc IT</option>
+                        <option>BBA</option>
+                        <option>B.Com</option>
+                    </select>
+                    </td>
+                    </tr>
+
+
+                    <tr>
+                    <td>City</td>
+                    <td>
+                    <input list="cities">
+                    <datalist id="cities">
+                    <option>Ahmedabad</option>
+                    <option>Rajkot</option>
+                    <option>Surat</option>
+                    <option>Vadodara</option>
+                    </datalist>
+                    </td>
+                    </tr>
+
+                    <tr>
+                    <td align="center" colspan="2" >
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear">
+                    </td>
+                    </tr>
+                </table>
+            </form>
+
+            
+            
+            <p style="font-size: 48px">📖</p><br>
+            <h1 style="color:white">Share Knowledge,</h1>
+            <h1 style="color:rgb(2, 234, 64)">Learn Together</h1>
+        </div>
+        </center>
+    </div>
+                                          <!-- footer -->
+    <div id="footer" >
+           <div>
+                <p ><b>Learn from the best and Share your Knowledge to others.</b></p>
+            </div>
+            <hr>
+            <div style="display:flex ;justify-content:space-between">
+                 <p >&copy; 2026 Assignment & Note Sharing Platform. All rights reserved.</p>
+                 <p >Contact us: info@assignmentplatform.com<br>Made with  for the education community</p>
+            </div>
+
+    </div>
+</body>
+</html>
